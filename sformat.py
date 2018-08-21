@@ -1,9 +1,9 @@
 def formatter(a):
+    """
+    INPUT:  String
+    OUTPUT: Formattable version of string
+    """
     def index2(string):
-        """
-        INPUT:  String
-        OUTPUT: Formattable version of string
-        """
         old = ""
         d = []
         for n, i in enumerate(string):
