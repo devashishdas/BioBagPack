@@ -1,5 +1,4 @@
 # updated from PyCharm
-#TODO: change the method to class
 from __future__ import print_function, division
 
 
