@@ -1,8 +1,10 @@
+# updated from PyCharm
 def formatter(a):
     """
     INPUT:  String
     OUTPUT: Formattable version of string
     """
+
     def index2(string):
         old = ""
         d = []
@@ -10,22 +12,19 @@ def formatter(a):
             if old == " " and i != " ":
                 d.append(n)
             old = i
-        w = {0:0}
+        w = {0: 0}
         for n, i in enumerate(string.split()[1:]):
-            w[n+1] = d[n]
-        return(w)
+            w[n + 1] = d[n]
+        return (w)
+
     a2 = a.split()
-    s = lambda w:"{}:>{}{}".format(chr(123),w,chr(125))
+    s = lambda w: "{}:>{}{}".format(chr(123), w, chr(125))
     d = ""
-    ww = lambda c:len(a[index2(a)[c-1]+len(a2[c-1]):index2(a)[c]])
-    for n,i in enumerate(a2):
-        if n==0:
+    ww = lambda c: len(a[index2(a)[c - 1] + len(a2[c - 1]):index2(a)[c]])
+    for n, i in enumerate(a2):
+        if n == 0:
             d = s(len(i))
         else:
             ss = ww(n) + len(i)
             d += s(ss)
-    return(d)
-            
-            
-
-
+    return (d)
